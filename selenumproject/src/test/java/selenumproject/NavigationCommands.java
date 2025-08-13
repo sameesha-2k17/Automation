@@ -2,7 +2,7 @@ package selenumproject;
 
 public class NavigationCommands extends Base {
 	
-	public void redirectnext() {
+	public void redirectnext() { 
 		driver.navigate().to("https://www.amazon.in/");
 		driver.navigate().back();
 		driver.navigate().forward();

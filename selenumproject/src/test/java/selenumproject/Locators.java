@@ -2,7 +2,7 @@ package selenumproject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
+ 
 public class Locators extends Base {
 	public void locate() {
 		WebElement id = driver.findElement(By.id("single-input-field"));

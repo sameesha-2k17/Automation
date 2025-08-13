@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 	public WebDriver driver;
-	
+	  
 	public void browserinitializer(){
 		driver = new ChromeDriver();
 		//driver = new EdgeDriver();
