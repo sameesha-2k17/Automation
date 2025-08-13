@@ -3,7 +3,7 @@ package selenumproject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BrowserCommands {  
+public class BrowserCommands {   
 	public WebDriver driver;
 	
 	public void browserinitializer() {
