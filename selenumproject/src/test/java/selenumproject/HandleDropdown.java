@@ -55,8 +55,6 @@ public class HandleDropdown extends Base {
 		dropdown.verifyCheckbox();
 		dropdown.verifyRadiobutton();
 		
-		
-		
 
 	}
 
