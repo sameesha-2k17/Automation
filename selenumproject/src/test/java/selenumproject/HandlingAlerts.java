@@ -14,12 +14,32 @@ public class HandlingAlerts extends Base {
 		simplealert.accept();//to click ok button
 		
 	}
+	
+	public void verifyConfirmAlert() {
+		driver.navigate().to("https://demoqa.com/alerts");
+		WebElement confirmalertbutton=driver.findElement(By.xpath("//button[@id='confirmButton']"));
+		confirmalertbutton.click();
+		Alert confirmalert=driver.switchTo().alert();
+		System.out.println(confirmalert.getText());
+		//confirmalert.accept(); // to click ok button
+		confirmalert.dismiss();
+		
+	}
+	public void verifyPromptAlert() {
+		driver.navigate().to("https://demoqa.com/alerts");
+		WebElement promptalertbutton=driver.findElement(By.xpath("//button[@id='promtButton']"));
+		promptalertbutton.click();
+		Alert promptalert=driver.switchTo().alert();
+		promptalert.sendKeys("sameesha");
+		promptalert.accept();	
+	}
 
 	public static void main(String[] args) {
 		HandlingAlerts alerts= new HandlingAlerts();
 		alerts.browserinitializer();
-		alerts.verifySimpleAlert();
-
+		//alerts.verifySimpleAlert();
+		//alerts.verifyConfirmAlert();
+		alerts.verifyPromptAlert();
 	}
 
 }
